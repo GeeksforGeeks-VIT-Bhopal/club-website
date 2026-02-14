@@ -32,10 +32,8 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-14">
           <div className="flex-shrink-0 flex items-center gap-2 cursor-pointer group">
             <Link to="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded bg-primary/20 flex items-center justify-center text-primary font-bold border border-primary/30 group-hover:bg-primary group-hover:text-white transition-colors">
-                <Terminal size={18} />
-              </div>
-              <span className="font-bold text-lg tracking-tight text-white group-hover:text-primary transition-colors">GFG VITB</span>
+              <img src="/gfg-logo.png" alt="GFG Logo" className="h-8 w-auto" />
+              <span className="font-bold text-lg tracking-tight text-white group-hover:text-primary transition-colors">GeeksforGeeks VIT Bhopal Chapter</span>
             </Link>
           </div>
 
@@ -92,10 +90,8 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center gap-2 mb-4 text-white font-bold text-xl">
-              <div className="w-6 h-6 rounded bg-primary flex items-center justify-center text-white">
-                <Terminal size={14} />
-              </div>
-              GFG VITB
+              <img src="/gfg-logo.png" alt="GFG Logo" className="h-6 w-auto" />
+              GeeksforGeeks VIT Bhopal Chapter
             </div>
             <p className="text-gray-500 text-sm mb-6">
               Empowering students to create, innovate, and lead in the tech world.

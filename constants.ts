@@ -11,18 +11,55 @@ export const IMAGES = {
 };
 
 export const LEADERSHIP: TeamMember[] = [
-  { id: '1', name: 'Dr. S. Karthikeyan', role: 'Faculty Coordinator', image: IMAGES.placeholder_profile_m },
-  { id: '2', name: 'Dr. R. Ganesan', role: 'Faculty Co-Coordinator', image: IMAGES.placeholder_profile_m },
-  { id: '3', name: 'Arjun Mehta', role: 'Chairperson', image: IMAGES.placeholder_profile_m },
-  { id: '4', name: 'Priya Sharma', role: 'Vice Chairperson', image: IMAGES.placeholder_profile_f },
-  { id: '5', name: 'Rohan Das', role: 'Student Coordinator', image: IMAGES.placeholder_profile_m },
-  { id: '6', name: 'Sneha Patel', role: 'Student Coordinator', image: IMAGES.placeholder_profile_f },
+  {
+    id: '1',
+    name: 'Prof. Jitendra Mathur',
+    role: 'Faculty Coordinator',
+    image: IMAGES.placeholder_profile_m,
+  },
+  {
+    id: '2',
+    name: 'Ashish Vishwakarma',
+    role: 'Chairperson',
+    image: IMAGES.placeholder_profile_m,
+    socials: {
+      linkedin: "https://www.linkedin.com/in/ashish-vishwakarma04/"
+    }
+  },
+  {
+    id: '3',
+    name: 'Khushang Singh',
+    role: 'Chairperson',
+    image: IMAGES.placeholder_profile_m,
+    socials: {
+      linkedin: "https://www.linkedin.com/in/khushangsingh2004/"
+    }
+  },
+  {
+    id: '4',
+    name: 'Swayam Prakash Panda',
+    role: 'Student Coordinator',
+    image: IMAGES.placeholder_profile_m,
+    socials: {
+      linkedin: "https://www.linkedin.com/in/swayam200/",
+      email: "swayam.23bai10661@vitbhopal.ac.in",
+    }
+  },
+  {
+    id: '5',
+    name: 'Athrv Dixit',
+    role: 'Student Coordinator',
+    image: IMAGES.placeholder_profile_m,
+    socials: {
+      linkedin: "https://www.linkedin.com/in/athrvdixit/"
+    }
+  },
 ];
 
 export const TEAMS: TeamSection[] = [
   {
     name: 'Technical Team',
-    lead: { id: 't1', name: 'Vikram Singh', role: 'Technical Lead', image: IMAGES.placeholder_profile_m },
+    lead: { id: 't1', name: 'Akanksha Shahi', role: 'Technical Lead', image: IMAGES.placeholder_profile_f },
     members: [
       { id: 't2', name: 'Member 1', role: 'Web Dev', image: IMAGES.placeholder_profile_f },
       { id: 't3', name: 'Member 2', role: 'App Dev', image: IMAGES.placeholder_profile_m },
@@ -32,7 +69,7 @@ export const TEAMS: TeamSection[] = [
   },
   {
     name: 'Event Management Team',
-    lead: { id: 'e1', name: 'Ananya Roy', role: 'Events Lead', image: IMAGES.placeholder_profile_f },
+    lead: { id: 'e1', name: 'Vishal Kumar', role: 'Events Lead', image: IMAGES.placeholder_profile_m },
     members: [
       { id: 'e2', name: 'Member 1', role: 'Logistics', image: IMAGES.placeholder_profile_m },
       { id: 'e3', name: 'Member 2', role: 'Planning', image: IMAGES.placeholder_profile_f },
@@ -41,7 +78,7 @@ export const TEAMS: TeamSection[] = [
   },
   {
     name: 'PR & Outreach Team',
-    lead: { id: 'p1', name: 'Kabir Singh', role: 'PR Lead', image: IMAGES.placeholder_profile_m },
+    lead: { id: 'p1', name: '-', role: 'PR Lead', image: IMAGES.placeholder_profile_f },
     members: [
       { id: 'p2', name: 'Member 1', role: 'Outreach', image: IMAGES.placeholder_profile_f },
       { id: 'p3', name: 'Member 2', role: 'Sponsorships', image: IMAGES.placeholder_profile_m },
@@ -49,7 +86,7 @@ export const TEAMS: TeamSection[] = [
   },
   {
     name: 'Social Media Team',
-    lead: { id: 's1', name: 'Zara Khan', role: 'Social Media Lead', image: IMAGES.placeholder_profile_f },
+    lead: { id: 's1', name: '-', role: 'Social Media Lead', image: IMAGES.placeholder_profile_f },
     members: [
       { id: 's2', name: 'Member 1', role: 'Content Writer', image: IMAGES.placeholder_profile_m },
       { id: 's3', name: 'Member 2', role: 'Reels/Video', image: IMAGES.placeholder_profile_f },
@@ -57,7 +94,7 @@ export const TEAMS: TeamSection[] = [
   },
   {
     name: 'Design Team',
-    lead: { id: 'd1', name: 'Riya Sen', role: 'Design Lead', image: IMAGES.placeholder_profile_f },
+    lead: { id: 'd1', name: 'Akanksha Tripathi', role: 'Design Lead', image: IMAGES.placeholder_profile_f },
     members: [
       { id: 'd2', name: 'Member 1', role: 'UI/UX', image: IMAGES.placeholder_profile_m },
       { id: 'd3', name: 'Member 2', role: 'GFX', image: IMAGES.placeholder_profile_f },
@@ -78,7 +115,7 @@ export const EVENTS: Event[] = [
   },
   {
     id: 'cp-insights',
-    title: 'CP – Getting Started & ICPC Insights',
+    title: 'CP - Getting Started & ICPC Insights',
     date: 'Dec 29, 2025',
     type: 'Speaker Session',
     image: IMAGES.event_2,
