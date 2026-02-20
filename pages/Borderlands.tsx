@@ -268,8 +268,13 @@ const BorderlandsPage: React.FC = () => {
                     <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
                         <button
                             onClick={() => scrollTo('what')}
-                            className="group relative px-8 py-3.5 text-white font-bold rounded-xl overflow-hidden transition-all duration-300 hover:scale-105 flex items-center justify-center"
-                            style={{ background: ACCENT.primary, boxShadow: `0 0 30px ${ACCENT.glow}` }}
+                            className="group relative px-8 py-3.5 font-bold rounded-xl overflow-hidden transition-all duration-300 hover:scale-105 flex items-center justify-center text-white"
+                            style={{
+                                border: `1px solid ${ACCENT.primary}`,
+                                background: 'rgba(220, 38, 38, 0.1)',
+                                boxShadow: `0 0 15px ${ACCENT.bg10}`,
+                                backdropFilter: 'blur(5px)'
+                            }}
                         >
                             <span className="relative z-10 flex items-center gap-2">
                                 Enter the Chaos <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
@@ -279,22 +284,22 @@ const BorderlandsPage: React.FC = () => {
                             href={REGISTRATION_URL}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="group relative px-8 py-3.5 font-bold rounded-xl transition-all duration-300 hover:scale-105 overflow-hidden"
+                            className="group relative px-8 py-3.5 font-bold rounded-xl transition-all duration-300 hover:scale-105 overflow-hidden flex items-center justify-center"
                             style={{
                                 background: ACCENT.primary,
-                                boxShadow: `0 0 25px ${ACCENT.glow}`,
-                                color: "white"
+                                boxShadow: `0 0 30px ${ACCENT.glowStrong}`,
+                                color: "white",
+                                border: `1px solid ${ACCENT.border40}`
                             }}
->
+                        >
                             <span className="relative z-10 flex items-center justify-center gap-2">
-                                Register Now
+                                Register Your Team
                                 <ChevronRight
-                                  size={18}
-                                  className="group-hover:translate-x-1 transition-transform"
-                             />
+                                    size={18}
+                                    className="group-hover:translate-x-1 transition-transform"
+                                />
                             </span>
                         </a>
-
                     </div>
 
                     {/* Countdown */}
