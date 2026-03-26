@@ -136,6 +136,17 @@ export const TEAMS: TeamSection[] = [
 
 export const EVENTS: Event[] = [
   {
+    id: 'geekxcelerate',
+    title: 'GeekXcelerate',
+    date: 'Apr 02, 2026',
+    type: 'Hackathon',
+    image: "/posters/GeekXcelerate%20Poster%20Final.png",
+    description: 'An 8-hour structured hackathon focused on building real, usable products.',
+    location: 'AB 1 Auditorium',
+    status: 'Upcoming',
+    link: '/hackathon'
+  },
+  {
     id: 'borderland',
     title: 'Borderland: Survive the Chaos',
     date: 'Feb 27, 2026',
@@ -143,7 +154,7 @@ export const EVENTS: Event[] = [
     image: "/images/events/borderland.png",
     description: '40 Minutes. Infinite Pressure. One Winning Team. A high-stakes survival game where trust is currency and betrayal is a weapon.',
     location: 'AB 1 - 303',
-    status: 'Upcoming',
+    status: 'Past',
     link: '/borderlands'
   },
   {

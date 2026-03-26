@@ -1,3 +1,4 @@
+import Hackathon from "./pages/Hackathon";
 import React from 'react';
 import { Analytics } from "@vercel/analytics/react"
 import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
@@ -15,6 +16,7 @@ const App: React.FC = () => {
     <Router>
       <Layout>
         <Routes>
+          <Route path="/hackathon" element={<Hackathon />} />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/team" element={<Team />} />

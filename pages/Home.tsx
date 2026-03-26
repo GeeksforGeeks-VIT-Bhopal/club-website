@@ -5,7 +5,7 @@ import { IMAGES, EVENTS } from '../constants';
 
 const Home: React.FC = () => {
   const [showBanner, setShowBanner] = useState(() => {
-    return sessionStorage.getItem('borderland-banner-dismissed') !== 'true';
+    return sessionStorage.getItem('hackathon-banner-dismissed') !== 'true';
   });
 
   const dismissBanner = () => {
@@ -15,35 +15,44 @@ const Home: React.FC = () => {
 
   return (
     <>
-      {/* Borderland Event Notification Banner */}
+      {/* Hackathon Event Notification Banner */}
       {showBanner && (
-        <div className="fixed top-16 left-0 right-0 z-40" style={{ animation: 'slide-down-fade 0.5s ease-out' }}>
-          <div className="max-w-4xl mx-auto px-4 mt-2">
-            <Link
-              to="/borderlands"
-              onClick={dismissBanner}
-              className="block w-full rounded-xl border border-red-500/30 bg-black/80 backdrop-blur-xl px-4 py-3 hover:border-red-500/60 transition-all duration-300 group hover:shadow-[0_0_30px_rgba(220,38,38,0.15)]"
-            >
-              <div className="flex items-center justify-between gap-3">
-                <div className="flex items-center gap-3 min-w-0">
-                  <span className="text-lg flex-shrink-0">🔥</span>
-                  <div className="min-w-0">
-                    <span className="text-white font-bold text-sm block sm:inline">Borderland: Survive the Chaos</span>
-                    <span className="text-gray-400 text-xs sm:text-sm sm:ml-2 block sm:inline">Feb 27 · AB 1-303 · Register Now →</span>
-                  </div>
-                </div>
-                <button
-                  onClick={(e) => { e.preventDefault(); e.stopPropagation(); dismissBanner(); }}
-                  className="text-gray-500 hover:text-white transition-colors flex-shrink-0 p-1"
-                  aria-label="Dismiss"
-                >
-                  <X size={16} />
-                </button>
-              </div>
-            </Link>
+      <div className="fixed top-16 left-0 right-0 z-40" style={{ animation: 'slide-down-fade 0.5s ease-out' }}>
+      <div className="max-w-4xl mx-auto px-4 mt-2">
+      <Link
+        to="/hackathon"
+        onClick={dismissBanner}
+        className="block w-full rounded-xl border border-green-500/30 bg-black/80 backdrop-blur-xl px-4 py-3 hover:border-green-500/60 transition-all duration-300 group hover:shadow-[0_0_30px_rgba(34,197,94,0.15)]"
+      >
+        <div className="flex items-center justify-between gap-3">
+          <div className="flex items-center gap-3 min-w-0">
+            <span className="text-lg flex-shrink-0">🚀</span>
+            <div className="min-w-0">
+              <span className="text-white font-bold text-sm block sm:inline">
+                GeekXcelerate
+              </span>
+              <span className="text-gray-400 text-xs sm:text-sm sm:ml-2 block sm:inline">
+                Register Now  →
+              </span>
+            </div>
           </div>
+
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              dismissBanner();
+            }}
+            className="text-gray-500 hover:text-white transition-colors flex-shrink-0 p-1"
+            aria-label="Dismiss"
+          >
+            <X size={16} />
+          </button>
         </div>
-      )}
+      </Link>
+    </div>
+  </div>
+)}
       <div className="relative pt-32 pb-20 sm:pt-40 sm:pb-24 lg:pb-32 overflow-hidden min-h-screen flex items-center">
         {/* Background Glow */}
         <div className="absolute inset-0 bg-mesh-gradient pointer-events-none"></div>
@@ -61,6 +70,9 @@ const Home: React.FC = () => {
           <p className="mt-4 max-w-2xl mx-auto text-lg sm:text-xl text-gray-400 mb-10 leading-relaxed">
             Join the elite coding fraternity of VIT Bhopal. We build projects, host hackathons, and cultivate the next generation of tech leaders.
           </p>
+          <Link to="/hackathon">
+  
+</Link>
 
           {/* Abstract Code Visualization */}
           <div className="mt-12 relative rounded-xl border border-white/10 bg-black/40 backdrop-blur-sm overflow-hidden shadow-2xl mx-auto max-w-5xl group">

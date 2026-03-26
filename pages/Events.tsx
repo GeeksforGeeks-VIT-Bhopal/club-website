@@ -43,7 +43,10 @@ const Events: React.FC = () => {
         {/* Tabs */}
         <div className="border-b border-white/10 mb-10">
           <nav className="-mb-px flex space-x-8">
-            {['Upcoming', 'Past Events', 'Hackathons'].map((tab) => (
+            {['Upcoming', 'Past Events'].map((tab) => {
+              const isUpcoming = tab === 'Upcoming';
+              const eventCount = EVENTS.filter(e => e.status === (isUpcoming ? 'Upcoming' : 'Past')).length;
+              return (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
@@ -53,15 +56,15 @@ const Events: React.FC = () => {
                   }`}
               >
                 {tab}
-                {tab === 'Upcoming' && <span className="ml-2 bg-primary/20 text-primary py-0.5 px-2 rounded-full text-xs">3</span>}
+                <span className="ml-2 bg-primary/20 text-primary py-0.5 px-2 rounded-full text-xs">{eventCount}</span>
               </button>
-            ))}
+            )})}
           </nav>
         </div>
 
         {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {EVENTS.map((event) => (
+          {EVENTS.filter(e => (activeTab === 'Upcoming' ? e.status === 'Upcoming' : e.status === 'Past')).map((event) => (
             <div key={event.id} className="group relative rounded-xl border border-white/10 bg-[#111] overflow-hidden hover:border-primary/40 hover:shadow-[0_0_20px_-5px_rgba(47,142,71,0.2)] transition-all duration-300 flex flex-col h-full">
               <div className="relative h-48 w-full overflow-hidden">
                 <div className="absolute top-3 left-3 z-10">
@@ -111,6 +114,7 @@ const Events: React.FC = () => {
           ))}
 
           {/* Placeholder for More */}
+          {activeTab === 'Upcoming' && (
           <div className="group relative rounded-xl border border-white/10 bg-[#111]/50 border-dashed overflow-hidden transition-all duration-300 flex flex-col h-full items-center justify-center p-8 text-center hover:bg-[#111] hover:border-solid hover:border-primary/50 cursor-pointer">
             <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <Bell className="text-primary" size={24} />
@@ -121,6 +125,7 @@ const Events: React.FC = () => {
               Notify Me
             </button>
           </div>
+          )}
 
         </div>
 
