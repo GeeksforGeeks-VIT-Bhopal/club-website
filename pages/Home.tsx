@@ -29,7 +29,7 @@ const Home: React.FC = () => {
             <span className="text-lg flex-shrink-0">🚀</span>
             <div className="min-w-0">
               <span className="text-white font-bold text-sm block sm:inline">
-                GFG Hackathon 2026
+                GeekXcelerate
               </span>
               <span className="text-gray-400 text-xs sm:text-sm sm:ml-2 block sm:inline">
                 Register Now  →
