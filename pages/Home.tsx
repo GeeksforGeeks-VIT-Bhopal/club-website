@@ -15,7 +15,8 @@ const Home: React.FC = () => {
 
   return (
     <>
-      {/* Hackathon Event Notification Banner */}
+      {/* 
+      Hackathon Event Notification Banner
       {showBanner && (
       <div className="fixed top-16 left-0 right-0 z-40" style={{ animation: 'slide-down-fade 0.5s ease-out' }}>
       <div className="max-w-4xl mx-auto px-4 mt-2">
@@ -53,6 +54,7 @@ const Home: React.FC = () => {
     </div>
   </div>
 )}
+ */}
       <div className="relative pt-32 pb-20 sm:pt-40 sm:pb-24 lg:pb-32 overflow-hidden min-h-screen flex items-center">
         {/* Background Glow */}
         <div className="absolute inset-0 bg-mesh-gradient pointer-events-none"></div>
