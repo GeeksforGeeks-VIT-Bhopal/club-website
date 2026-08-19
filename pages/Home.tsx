@@ -184,38 +184,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Events Preview */}
-      <section className="py-20 bg-surface relative border-y border-white/5">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-end mb-12">
-            <div>
-              <h2 className="text-3xl font-bold text-white mb-2">Upcoming Events</h2>
-              <p className="text-gray-400">Mark your calendars. Don't miss out on the action.</p>
-            </div>
-            <Link to="/events" className="hidden md:flex items-center gap-1 text-primary text-sm font-medium hover:text-white transition-colors">
-              View All Calendar <ArrowRight size={16} />
-            </Link>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {EVENTS
-            .filter((event) => event.status === 'Upcoming')
-            .slice(0, 3)
-            .map((event) => (
-              <div key={event.id} className="group cursor-pointer">
-                <div className="relative aspect-video rounded-xl overflow-hidden mb-4 border border-white/10">
-                  <div className="absolute top-3 left-3 bg-black/60 backdrop-blur-md text-white text-xs font-bold px-2 py-1 rounded border border-white/10 z-10">
-                    {event.date}
-                  </div>
-                  <img src={event.image} alt={event.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async" />
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
-                </div>
-                <h3 className="text-lg font-bold text-white mb-1 group-hover:text-primary transition-colors">{event.title}</h3>
-                <p className="text-sm text-gray-400 line-clamp-2">{event.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* CTA */}
       <section className="py-20 px-4">
