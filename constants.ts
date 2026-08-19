@@ -135,17 +135,7 @@ export const TEAMS: TeamSection[] = [
 ];
 
 export const EVENTS: Event[] = [
-  {
-    id: 'geekxcelerate',
-    title: 'GeekXcelerate',
-    date: 'Apr 02, 2026',
-    type: 'Hackathon',
-    image: "/posters/GeekXcelerate%20Poster%20Final.png",
-    description: 'An 8-hour structured hackathon focused on building real, usable products.',
-    location: 'AB 1 Auditorium',
-    status: 'Upcoming',
-    link: '/hackathon'
-  },
+
   {
     id: 'borderland',
     title: 'Borderland: Survive the Chaos',
