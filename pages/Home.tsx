@@ -1,6 +1,21 @@
 import React, { useState } from 'react';
-import { Code, Terminal, Cpu, GitBranch, ArrowRight, X } from 'lucide-react';
+
+import {
+  Code,
+  Terminal,
+  Cpu,
+  GitBranch,
+  ArrowRight,
+  X,
+  Users,
+  Calendar,
+  Trophy,
+  MessageCircle,
+  Github
+} from 'lucide-react';
+
 import { Link } from 'react-router-dom';
+
 import { IMAGES, EVENTS } from '../constants';
 
 const Home: React.FC = () => {
@@ -10,7 +25,7 @@ const Home: React.FC = () => {
 
   const dismissBanner = () => {
     setShowBanner(false);
-    sessionStorage.setItem('borderland-banner-dismissed', 'true');
+    sessionStorage.setItem('hackathon-banner-dismissed', 'true');
   };
 
   return (
@@ -55,69 +70,243 @@ const Home: React.FC = () => {
   </div>
 )}
  */}
-      <div className="relative pt-32 pb-20 sm:pt-40 sm:pb-24 lg:pb-32 overflow-hidden min-h-screen flex items-center">
-        {/* Background Glow */}
-        <div className="absolute inset-0 bg-mesh-gradient pointer-events-none"></div>
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/10 rounded-full blur-[100px] pointer-events-none"></div>
+{/* Hero Section */}
+<div className="relative min-h-screen pt-28 pb-10 overflow-hidden">
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/10 border border-red-500/20 text-red-400 text-xs font-semibold uppercase tracking-wider mb-8 cursor-default">
-            <span className="w-2 h-2 rounded-full bg-red-500"></span>
-            Recruitment is currently closed for 2025-26 academic year
-          </div>
-          <h1 className="text-5xl sm:text-7xl font-extrabold tracking-tight text-white mb-6 text-glow">
-            Where Code Meets <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-green-300">Community</span>
-          </h1>
-          <p className="mt-4 max-w-2xl mx-auto text-lg sm:text-xl text-gray-400 mb-10 leading-relaxed">
-            Join the elite coding fraternity of VIT Bhopal. We build projects, host hackathons, and cultivate the next generation of tech leaders.
-          </p>
-          <Link to="/hackathon">
-  
-</Link>
+  {/* Background */}
+  <div className="absolute inset-0 bg-mesh-gradient pointer-events-none" />
 
-          {/* Abstract Code Visualization */}
-          <div className="mt-12 relative rounded-xl border border-white/10 bg-black/40 backdrop-blur-sm overflow-hidden shadow-2xl mx-auto max-w-5xl group">
-            <div className="absolute top-0 left-0 w-full h-8 bg-white/5 border-b border-white/5 flex items-center px-4 gap-2 z-20">
-              <div className="w-3 h-3 rounded-full bg-red-500/50"></div>
-              <div className="w-3 h-3 rounded-full bg-yellow-500/50"></div>
-              <div className="w-3 h-3 rounded-full bg-green-500/50"></div>
-            </div>
-            <div className="aspect-[16/9] w-full bg-surface-dark relative">
-              <img
-                src={IMAGES.hero_code}
-                alt="Code editor"
-                className="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-500"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
-            </div>
+  <div className="absolute top-[20%] left-[55%] w-[600px] h-[600px] bg-primary/10 rounded-full blur-[140px] pointer-events-none" />
+
+  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[900px] h-[300px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
+
+  {/* Decorative dots */}
+  <div className="absolute top-32 right-[42%] grid grid-cols-5 gap-4 opacity-40">
+    {Array.from({ length: 25 }).map((_, i) => (
+      <span
+        key={i}
+        className="w-1 h-1 rounded-full bg-primary"
+      />
+    ))}
+  </div>
+
+  <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
+
+    {/* Hero Content */}
+    <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[680px]">
+
+      {/* LEFT SIDE */}
+      <div className="text-left">
+
+        {/* Recruitment Badge */}
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/5 border border-primary/30 text-primary text-xs font-semibold uppercase tracking-wider mb-8">
+          <span className="w-2 h-2 rounded-full bg-primary shadow-[0_0_10px_rgba(34,197,94,0.8)]" />
+          Recruitment is currently closed for 2025-26 academic year
+        </div>
+
+        {/* Heading */}
+        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.05] mb-7">
+          Where Code
+          <br />
+          Meets{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-green-300">
+            Community
+          </span>
+        </h1>
+
+        {/* Description */}
+        <p className="max-w-xl text-lg sm:text-xl text-gray-400 leading-relaxed mb-9">
+          Join the elite coding fraternity of VIT Bhopal. We build projects,
+          host hackathons, and cultivate the next generation of tech leaders.
+        </p>
+
+        {/* Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 mb-10">
+
+          <Link
+            to="#features"
+            className="inline-flex items-center justify-center gap-3 bg-primary text-white px-7 py-4 rounded-lg font-semibold hover:bg-primary-dark transition-all shadow-lg hover:shadow-primary/30"
+          >
+            Explore More
+            <ArrowRight size={20} />
+          </Link>
+
+          <Link
+            to="/events"
+            className="inline-flex items-center justify-center gap-3 bg-transparent border border-white/20 text-white px-7 py-4 rounded-lg font-semibold hover:bg-white/5 transition-all"
+          >
+            Upcoming Events
+            <Calendar size={19} />
+          </Link>
+
+        </div>
+
+        {/* Stats */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl">
+
+          <div className="rounded-xl border border-white/10 bg-black/30 backdrop-blur-sm p-4 text-center hover:border-primary/30 transition-all">
+            <Users className="mx-auto mb-2 text-primary" size={25} />
+            <div className="text-2xl font-bold text-white">500+</div>
+            <div className="text-xs text-gray-400 mt-1">Active Members</div>
           </div>
+
+          <div className="rounded-xl border border-white/10 bg-black/30 backdrop-blur-sm p-4 text-center hover:border-primary/30 transition-all">
+            <Calendar className="mx-auto mb-2 text-primary" size={25} />
+            <div className="text-2xl font-bold text-white">25+</div>
+            <div className="text-xs text-gray-400 mt-1">Events Organized</div>
+          </div>
+
+          <div className="rounded-xl border border-white/10 bg-black/30 backdrop-blur-sm p-4 text-center hover:border-primary/30 transition-all">
+            <Code className="mx-auto mb-2 text-primary" size={25} />
+            <div className="text-2xl font-bold text-white">40+</div>
+            <div className="text-xs text-gray-400 mt-1">Projects Built</div>
+          </div>
+
+          <div className="rounded-xl border border-white/10 bg-black/30 backdrop-blur-sm p-4 text-center hover:border-primary/30 transition-all">
+            <Trophy className="mx-auto mb-2 text-primary" size={25} />
+            <div className="text-2xl font-bold text-white">15+</div>
+            <div className="text-xs text-gray-400 mt-1">Hackathon Wins</div>
+          </div>
+
         </div>
       </div>
 
-      {/* Stats Strip */}
-      <div className="border-y border-white/5 bg-white/[0.02]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/5">
-            <div className="p-2">
-              <div className="text-3xl font-bold text-white mb-1">50+</div>
-              <div className="text-xs text-primary font-medium uppercase tracking-wider">Core Members</div>
-            </div>
-            <div className="p-2">
-              <div className="text-3xl font-bold text-white mb-1">2000+</div>
-              <div className="text-xs text-primary font-medium uppercase tracking-wider">Lifetime Members</div>
-            </div>
-            <div className="p-2">
-              <div className="text-3xl font-bold text-white mb-1">30+</div>
-              <div className="text-xs text-primary font-medium uppercase tracking-wider">Events Hosted</div>
-            </div>
-            <div className="p-2">
-              <div className="text-3xl font-bold text-white mb-1">15+</div>
-              <div className="text-xs text-primary font-medium uppercase tracking-wider">Workshops</div>
+      {/* RIGHT SIDE — CODE WINDOW */}
+      <div className="relative">
+
+        {/* Green glow behind window */}
+        <div className="absolute inset-10 bg-primary/20 blur-[80px] rounded-full" />
+
+        <div className="relative rounded-2xl border border-primary/30 bg-black/70 backdrop-blur-md overflow-hidden shadow-2xl shadow-primary/10">
+
+          {/* Window Header */}
+          <div className="h-12 bg-white/[0.04] border-b border-white/10 flex items-center px-5 gap-2">
+
+            <div className="w-3 h-3 rounded-full bg-red-500" />
+            <div className="w-3 h-3 rounded-full bg-yellow-500" />
+            <div className="w-3 h-3 rounded-full bg-green-500" />
+
+            <span className="ml-4 text-xs text-gray-500 font-mono">
+              gfg_vitb.cpp
+            </span>
+
+          </div>
+
+          {/* Code */}
+          <div className="aspect-[4/3] relative bg-[#050807]">
+
+            <img
+              src={IMAGES.hero_code}
+              alt="GeeksforGeeks VIT Bhopal code"
+              className="absolute inset-0 w-full h-full object-cover opacity-50"
+            />
+
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-black/50" />
+
+            <div className="absolute inset-0 p-8 font-mono text-sm text-gray-400 leading-6">
+
+              <p>
+                <span className="text-green-500">#include</span>{" "}
+                <span className="text-purple-400">&lt;community&gt;</span>
+              </p>
+
+              <p>
+                <span className="text-green-500">#include</span>{" "}
+                <span className="text-purple-400">&lt;passion&gt;</span>
+              </p>
+
+              <p>
+                <span className="text-green-500">#include</span>{" "}
+                <span className="text-purple-400">&lt;learning&gt;</span>
+              </p>
+
+              <br />
+
+              <p>
+                <span className="text-blue-400">int</span>{" "}
+                <span className="text-yellow-300">main</span>() {"{"}
+              </p>
+
+              <p className="pl-6">
+                <span className="text-purple-400">while</span> (
+                <span className="text-blue-400">true</span>) {"{"}
+              </p>
+
+              <p className="pl-12 text-green-400">build();</p>
+              <p className="pl-12 text-green-400">learn();</p>
+              <p className="pl-12 text-green-400">collaborate();</p>
+              <p className="pl-12 text-green-400">innovate();</p>
+              <p className="pl-12 text-green-400">inspire();</p>
+
+              <p className="pl-6">{"}"}</p>
+              <p>{"}"}</p>
+
+              <br />
+
+              <p className="text-primary">
+                // GeeksforGeeks VIT Bhopal
+              </p>
+              <p className="text-primary">
+                // Building the future, together.
+              </p>
+              <p className="text-primary">
+                // We don't just code, we create impact.
+              </p>
+
             </div>
           </div>
         </div>
+
+        {/* Decorative glowing sphere */}
+        <div className="absolute -top-10 -right-8 w-24 h-24 rounded-full bg-primary/30 blur-md border border-primary/20" />
+
+        <div className="absolute -bottom-8 -left-8 w-20 h-20 rounded-full bg-primary/20 blur-md border border-primary/20" />
+
       </div>
+    </div>
+
+    {/* Bottom Community Strip */}
+    <div className="relative mt-6 rounded-2xl border border-white/10 bg-black/40 backdrop-blur-md px-6 py-7">
+
+      <div className="text-center text-xs tracking-[0.35em] uppercase text-gray-400 mb-6">
+        A Community Driven By{" "}
+        <span className="text-primary font-semibold">
+          Passion & Purpose
+        </span>
+      </div>
+
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+
+        <div className="flex items-center justify-center gap-3 text-gray-300">
+          <Code size={22} className="text-primary" />
+          <span>Problem Solving</span>
+        </div>
+
+        <div className="flex items-center justify-center gap-3 text-gray-300">
+          <Github size={22} />
+          <span>Open Source</span>
+        </div>
+
+        <div className="flex items-center justify-center gap-3 text-gray-300">
+          <Users size={22} className="text-primary" />
+          <span>Peer Learning</span>
+        </div>
+
+        <div className="flex items-center justify-center gap-3 text-gray-300">
+          <Trophy size={22} />
+          <span>Hackathons</span>
+        </div>
+
+        <div className="flex items-center justify-center gap-3 text-gray-300">
+          <MessageCircle size={22} />
+          <span>Tech Talks</span>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
 
       {/* What We Do (Bento Grid) */}
       <section id="features" className="py-24 relative">
