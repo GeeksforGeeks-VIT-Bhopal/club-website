@@ -94,7 +94,7 @@ export const TEAMS: TeamSection[] = [
   },
   {
     name: 'PR & Outreach Team',
-    lead: { id: 'p1', name: 'Sanskriti Tyagi ', role: 'PR Lead', image: "images/team/pr/sanskriti.jpg" },
+    lead: { id: 'p1', name: 'Sanskriti Tyagi ', role: 'PR Lead', image: "images/team/pr/sanskriti.jpeg" },
     members: [
       { id: 'p2', name: 'Aditya Saraf', role: 'Outreach', image: "images/team/pr/ADITYA_ATUL_SARAF.jpg" },
       { id: 'p3', name: 'Sarah Ahmed', role: 'Sponsorships', image: "images/team/pr/Sarah_Ahmed.jpg" },
