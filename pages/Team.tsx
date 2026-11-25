@@ -67,7 +67,7 @@ const Team: React.FC = () => {
                 <div className="text-center mb-16">
                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-semibold mb-6">
                         <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
-                        <span>2025-2026 Core Committee</span>
+                        <span>2026-2027 Core Committee</span>
                     </div>
                     <h1 className="text-5xl font-bold tracking-tight text-white mb-6">Meet the Architects</h1>
                     <p className="text-gray-400 max-w-2xl mx-auto">

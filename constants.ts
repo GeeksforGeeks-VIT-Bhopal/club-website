@@ -19,39 +19,39 @@ export const LEADERSHIP: TeamMember[] = [
   },
   {
     id: '2',
-    name: 'Ashish Vishwakarma',
-    role: 'Chairperson',
-    image: "/images/team/ashish-vishwakarma.png",
+    name: 'Athrv Dixit',
+    role: 'President',
+    image: "/images/team/athrv-dixit.jpg",
     socials: {
-      linkedin: "https://www.linkedin.com/in/ashish-vishwakarma04/"
+      linkedin: "https://www.linkedin.com/in/athrvdixit/"
     }
   },
   {
     id: '3',
-    name: 'Khushang Singh',
-    role: 'Chairperson',
-    image: "/images/team/khushang-singh.jpg",
+    name: 'Akanksha Shahi',
+    role: 'Vice President',
+    image: "images/team/technical/akanksha-shahi.jpg",
     socials: {
-      linkedin: "https://www.linkedin.com/in/khushangsingh2004/"
+      linkedin: "https://www.linkedin.com/in/akanksha-shahi-6609b3312/"
     }
   },
   {
     id: '4',
-    name: 'Swayam Prakash Panda',
+    name: 'Aryan Kumar ',
     role: 'Student Coordinator',
-    image: "/images/team/swayam-panda.png",
+    image: "images/team/aryan.jpg",
     socials: {
-      linkedin: "https://www.linkedin.com/in/swayam200/",
+      linkedin: "https://www.linkedin.com/in/aryankumar13/",
       email: "swayam.23bai10661@vitbhopal.ac.in",
     }
   },
   {
     id: '5',
-    name: 'Athrv Dixit',
+    name: 'Saanvi Shukla ',
     role: 'Student Coordinator',
-    image: "/images/team/athrv-dixit.jpg",
+    image: "images/team/social/saanvi.jpg",
     socials: {
-      linkedin: "https://www.linkedin.com/in/athrvdixit/"
+      linkedin: "https://www.linkedin.com/in/saanvi-shukla-9a3a5a3b9/"
     }
   },
 ];
@@ -59,15 +59,18 @@ export const LEADERSHIP: TeamMember[] = [
 export const TEAMS: TeamSection[] = [
   {
     name: 'Technical Team',
-    lead: { id: 't1', name: 'Akanksha Shahi', role: 'Technical Lead', image: "images/team/technical/akanksha-shahi.jpg" },
+    lead: { id: 't1', name: 'Saumya Ambar', role: 'Technical Lead', image: "images/team/technical/saumya.jpeg" },
     members: [
       { id: 't2', name: 'Kartikeya Shukla', role: 'Web Dev', image: "images/team/technical/kartikeya.webp" },
-      { id: 't3', name: 'Krishna Kushwaha', role: 'App Dev', image: "images/team/technical/krishna.jpg" },
-      { id: 't4', name: 'Praveen Kumar Patel', role: 'AI/ML', image: "images/team/technical/praveen.jpg" },
+      { id: 't3', name: 'Akshat Grover', role: 'App Dev', image: "images/team/technical/AKSHAT_GROVER.png" },
+      { id: 't4', name: 'Khant Jaimin Jigneshbhai', role: 'AI/ML', image: "images/team/technical/Khant_Jaimin_Jigneshbhai.jpg" },
       { id: 't5', name: 'Tarni Jain', role: 'Cloud', image: "images/team/technical/tarni.jpg" },
       {
-        id: 't6', name: 'Saumya Ambar', role: 'Web Dev', image: "images/team/technical/saumya.jpg",
+        id: 't6', name: 'Sangini Sinha', role: 'Web Dev', image: "images/team/technical/Sangini.jpg"
       },
+      { id: 't7', name: 'Parth Chouhan', role: 'Cloud', image: "images/team/technical/Parth_Chouhan.jpeg" },
+      { id: 't8', name: 'Hardik Agarwal', role: 'Cloud', image: "images/team/technical/Hardik_Agarwal.jpg" },
+      
     ]
   },
   {
@@ -100,36 +103,36 @@ export const TEAMS: TeamSection[] = [
   },
   {
     name: 'Social Media Team',
-    lead: { id: 's1', name: 'Nimisha Tailor', role: 'Social Media Lead', image: "images/team/social/nimisha.jpg" },
+    lead: { id: 's1', name: 'Lavanya Jha', role: 'Social Media Lead', image: "images/team/social/lavanya.jpg" },
     members: [
-      { id: 's2', name: 'Shivi Sanjay', role: 'Content Writer', image: "images/team/social/shivi.jpg" },
+      { id: 's2', name: 'Saurjyesh Mekap', role: 'Content Writer', image: "images/team/social/Saurjyesh_Mekap.jpeg" },
       { id: 's3', name: 'Shambhavi Singh', role: 'Reels/Video', image: "images/team/social/shambhavi.jpg" },
-      { id: 's4', name: 'Saanvi Shukla', role: 'Content Writer', image: "images/team/social/saanvi.jpg" },
-      { id: 's5', name: 'Jatin Rathor ', role: 'Reels/Video', image: "images/team/social/jatin.jpg" },
-      { id: 's6', name: 'Chandashi gupta', role: 'Content Writer', image: "images/team/social/chandashi.jpg" },
-      { id: 's7', name: 'Bisanjeet mohapatra', role: 'Reels/Video', image: "images/team/social/bisanjeet.jpg" },
+      { id: 's4', name: 'Pranav Dange', role: 'Content Writer', image: "images/team/social/Pranav_Dange.jpg" },
+      { id: 's5', name: 'Harshit Parmar', role: 'Reels/Video', image: "images/team/social/Harshit_Parmar.webp" },
+      { id: 's6', name: 'Janvi Raghwani ', role: 'Content Writer', image: "images/team/social/Janvi_Raghwani.jpeg" },
+      { id: 's7', name: 'Shivika Patidar', role: 'Reels/Video', image: "images/team/social/Shivika_Patidar.jpeg" },
     ]
   },
   {
     name: 'Design Team',
-    lead: { id: 'd1', name: 'Akanksha Tripathi', role: 'Design Lead', image: IMAGES.placeholder_profile_f },
+    lead: { id: 'd1', name: 'Shreesh Upadhayay', role: 'Design Lead', image: "images/team/design/Shreesh_Upadhayay.jpg"},
     members: [
-      { id: 'd2', name: 'Rishita Prajapati', role: 'UI/UX', image: "images/team/design/rishita.jpg" },
-      { id: 'd3', name: 'Shreesh Upadhayay', role: 'GFX', image: "images/team/design/shreesh.png" },
-      { id: 'd4', name: 'Aditi Dubey', role: 'UI/UX', image: "images/team/design/aditi.jpg" },
-      { id: 'd5', name: 'Deeksha Bhojwani ', role: 'UI/UX', image: "images/team/design/deeksha.jpg" },
-      { id: 'd6', name: 'Gaurav Jain', role: 'UI/UX', image: "images/team/design/gaurav.jpg" },
+      { id: 'd2', name: 'Aditi Dubey', role: 'UI/UX', image: "images/team/design/Aditi_Dubey.png" },
+      { id: 'd3', name: 'KADALI CHANDRA DEEKSHITHA ', role: 'UI/UX', image: "images/team/design/Deekshitha.png" },
+      
     ]
   },
   {
     name: 'Marketing Team',
-    lead: { id: 'm1', name: 'Shreya Gupta', role: 'Marketing Lead', image: "images/team/marketing/shreya.jpg" },
+    lead: { id: 'm1', name: 'Ansh Mittal', role: 'Marketing Lead', image: "images/team/marketing/ansh.jpg" },
     members: [
-      { id: 'm2', name: 'Ansh Mittal ', role: 'Content Writing', image: "images/team/marketing/ansh.jpg" },
-      { id: 'm3', name: 'Aryan kumar', role: 'Social Media', image: "images/team/marketing/aryan.jpg" },
-      { id: 'm4', name: 'Aryan Vishwakarma', role: 'Content Writing', image: "images/team/marketing/aryanv.jpg" },
-      { id: 'm5', name: 'Ashvin Dewangan', role: 'Social Media', image: "images/team/marketing/ashvin.png" },
-      { id: 'm6', name: 'Lavanya', role: 'Content Writing', image: "images/team/marketing/lavanya.jpg" },
+      { id: 'm2', name: 'Dipika Anand', role: 'Content Writing', image: "images/team/marketing/Dipika_Anand.jpg" },
+      { id: 'm3', name: 'Sugandh Sarthak', role: 'Social Media', image: "images/team/marketing/Sugandh_Sarthak.jpeg" },
+      { id: 'm4', name: 'Sandeep Ganesh ', role: 'Content Writing', image: "images/team/marketing/SANDEEP_GANESH.jpg" },
+      { id: 'm5', name: 'Srilakshmi Tejaswini ', role: 'Social Media', image: "images/team/marketing/Sri_lakshmi_Tejaswini.png" },
+      { id: 'm6', name: 'Piyush Agarwal', role: 'Content Writing', image: "images/team/marketing/Piyush_Agarwal.png" },
+      { id: 'm7', name: 'D.N.S.Smitha Devi', role: 'Content Writing', image: "images/team/marketing/Smitha_Devi.png" },
+   
     ]
   },
 ];
