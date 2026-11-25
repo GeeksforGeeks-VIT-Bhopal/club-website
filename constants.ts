@@ -100,6 +100,7 @@ export const TEAMS: TeamSection[] = [
       { id: 'p3', name: 'Sarah Ahmed', role: 'Sponsorships', image: "images/team/pr/Sarah_Ahmed.jpg" },
       { id: 'p4', name: 'Gaurav Kumar Singh', role: 'Outreach', image: "images/team/pr/Gaurav_Kumar_Singh.png" },
       { id: 'p5', name: 'Putta Ashritha ', role: 'Sponsorships', image: "images/team/pr/Ashritha_Putta.jpg" },
+      { id: 'p6', name: 'Anubhav Khare', role: 'Sponsorships', image: "images/team/pr/anubhav.jpg" },
       
     ]
   },
