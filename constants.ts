@@ -75,30 +75,32 @@ export const TEAMS: TeamSection[] = [
   },
   {
     name: 'Event Management Team',
-    lead: { id: 'e1', name: 'Vishal Kumar', role: 'Events Lead', image: "images/team/event/vishal.jpg" },
+    lead: { id: 'e1', name: 'Priyanshi Mishra', role: 'Events Lead', image: "images/team/event/Priyanshi_Mishra.jpeg" },
     members: [
-      { id: 'e2', name: 'Vedanshika Singh', role: 'Logistics', image: "images/team/event/vedanshika.jpg" },
-      { id: 'e3', name: 'Steve Kevin Dias', role: 'Planning', image: "images/team/event/steve.jpg" },
-      { id: 'e4', name: 'Sri Shaswathi P', role: 'Operations', image: "images/team/event/sri.png" },
-      { id: 'e5', name: 'Sagar Shukla', role: 'Logistics', image: "images/team/event/sagar.jpg" },
-      { id: 'e6', name: 'Rishika', role: 'Planning', image: "images/team/event/rishika.jpg" },
-      { id: 'e7', name: 'Ojasv Choubey', role: 'Operations', image: "images/team/event/ojasv.jpg" },
-      { id: 'e8', name: 'Kshitika Atri', role: 'Logistics', image: "images/team/event/kshitika.png" },
-      { id: 'e9', name: 'Kristi Kar Choudhur', role: 'Planning', image: "images/team/event/kristi.jpg" },
-      { id: 'e10', name: 'Hiral Jawarkar', role: 'Operations', image: "images/team/event/hiral.jpg" },
-      { id: 'e11', name: 'Ashlesha Kamal ', role: 'Logistics', image: "images/team/event/ashlesha.jpg" },
+      { id: 'e2', name: 'Divyanshi Mishra ', role: 'Logistics', image: "images/team/event/Divyanshi_Mishra.jpg" },
+      { id: 'e3', name: 'Tanisha Sharma', role: 'Logistics', image: "images/team/event/Tanisha_Sharma.jpeg" }, 
+      { id: 'e4', name: 'Mabel Jacquelin Fernandes ', role: 'Operations', image: "images/team/event/Mabel_Fernandes.jpg" },
+      { id: 'e5', name: 'Samriddhi Maudgal', role: 'Logistics', image: "images/team/event/Samriddhi_Maudgal.jpg" },
+      { id: 'e6', name: 'Uday Chauhan', role: 'Planning', image: "images/team/event/Uday_Chauhan.jpg" },
+      { id: 'e7', name: 'Ojasv Choubey', role: 'Operations', image: "images/team/event/Ojasv_Choubey.jpg" },
+      { id: 'e8', name: 'SOUMYA TANDON ', role: 'Logistics', image: "images/team/event/SOUMYA_TANDON.jpg" },
+      { id: 'e9', name: 'Anvi Parikh', role: 'Planning', image: "images/team/event/Anvi_Parikh.jpeg" },
+      { id: 'e10', name: 'Yugal Singh Rao', role: 'Operations', image: "images/team/event/Yugal_Singh_Rao.jpeg" },
+      { id: 'e11', name: 'Prakhar Patil', role: 'Planning', image: "images/team/event/Prakhar_Patil.jpg" },
+      { id: 'e12', name: 'Pranjal Shahi', role: 'Planning', image: "images/team/event/Pranjal_Shahi.jpeg" },
+      { id: 'e13', name: 'Harsh jain', role: 'Planning', image: "images/team/event/Harsh_jain.jpg" },
+      
     ]
   },
   {
     name: 'PR & Outreach Team',
-    lead: { id: 'p1', name: 'Sejal Mishra', role: 'PR Lead', image: "images/team/pr/sejal.jpg" },
+    lead: { id: 'p1', name: 'Sanskriti Tyagi ', role: 'PR Lead', image: "images/team/pr/sanskriti.jpg" },
     members: [
-      { id: 'p2', name: 'Sanskriti Tyagi', role: 'Outreach', image: "images/team/pr/sanskriti.jpg" },
-      { id: 'p3', name: 'Sakshi Dhananjay Bhosale', role: 'Sponsorships', image: "images/team/pr/sakshi.jpg" },
-      { id: 'p4', name: 'Priyanshi Mishra', role: 'Outreach', image: "images/team/pr/priyanshi.jpg" },
-      { id: 'p5', name: 'Palak Bhatla', role: 'Sponsorships', image: "images/team/pr/palak.png" },
-      { id: 'p6', name: 'Om shukla', role: 'Outreach', image: "images/team/pr/om.jpg" },
-      { id: 'p7', name: 'Ayusman Choudhury', role: 'Sponsorships', image: "images/team/pr/ayushman.jpg" },
+      { id: 'p2', name: 'Aditya Saraf', role: 'Outreach', image: "images/team/pr/ADITYA_ATUL_SARAF.jpg" },
+      { id: 'p3', name: 'Sarah Ahmed', role: 'Sponsorships', image: "images/team/pr/Sarah_Ahmed.jpg" },
+      { id: 'p4', name: 'Gaurav Kumar Singh', role: 'Outreach', image: "images/team/pr/Gaurav_Kumar_Singh.png" },
+      { id: 'p5', name: 'Putta Ashritha ', role: 'Sponsorships', image: "images/team/pr/Ashritha_Putta.jpg" },
+      
     ]
   },
   {
@@ -129,9 +131,9 @@ export const TEAMS: TeamSection[] = [
       { id: 'm2', name: 'Dipika Anand', role: 'Content Writing', image: "images/team/marketing/Dipika_Anand.jpg" },
       { id: 'm3', name: 'Sugandh Sarthak', role: 'Social Media', image: "images/team/marketing/Sugandh_Sarthak.jpeg" },
       { id: 'm4', name: 'Sandeep Ganesh ', role: 'Content Writing', image: "images/team/marketing/SANDEEP_GANESH.jpg" },
-      { id: 'm5', name: 'Srilakshmi Tejaswini ', role: 'Social Media', image: "images/team/marketing/Sri_lakshmi_Tejaswini.png" },
+      { id: 'm5', name: 'Srilakshmi Tejaswini ', role: 'Social Media', image: "images/team/marketing/Sri_lakshmi_Tejaswini.jpg" },
       { id: 'm6', name: 'Piyush Agarwal', role: 'Content Writing', image: "images/team/marketing/Piyush_Agarwal.png" },
-      { id: 'm7', name: 'D.N.S.Smitha Devi', role: 'Content Writing', image: "images/team/marketing/Smitha_Devi.png" },
+      { id: 'm7', name: 'D.N.S.Smitha Devi', role: 'Content Writing', image: "images/team/marketing/SMITHA_DEVI.png" },
    
     ]
   },
